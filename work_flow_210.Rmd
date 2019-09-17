@@ -1,0 +1,75 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+##**_Joseph Randolph_**
+
+**CHAPTER 4 **
+code basics 
+ -Assign  varisables with '<-' or '='
+ 
+**4.2**
+use snake case to avoid using space in names exp. i_use_snake_case
+
+r is caps sensitive when calling objects
+
+**4.3 Calling functions**
+functions name of function followed by perinthesis containing the object with in them
+ function_name(arg1 = val1, arg2 = val2, ...)
+ 
+ functions containing objects can be assigned
+ y <- seq(1, 10, length.out = 5)
+ 
+ **4.4 Practice**
+ Alt + Shift + K prompts a list of keyboard short cuts
+ 
+ **5 Data transformation**
+ transform your data using the dplyr package and a new dataset on flights departing New York City in 2013
+ 
+ **5.1.1 Prerequisites**
+ 
+ In this chapter we’re going to focus on how to use the dplyr package, another core member of the tidyverse. We’ll illustrate the key ideas using data from the nycflights13 package, and use ggplot2 to help us understand the data.
+
+library(nycflights13)
+library(tidyverse).
+
+**5.1.2 nycflights13**
+ Tibbles are data frames, but slightly tweaked to work better in the tidyverse
+ There are three other common types of variables that aren’t used in this dataset but you’ll encounter later in the book:
+
+lgl stands for logical, vectors that contain only TRUE or FALSE.
+
+fctr stands for factors, which R uses to represent categorical variables with fixed possible values.
+
+date stands for dates.
+
+**6 Workflow: scripts**
+you can run code in scripts upper right hand corner
+
+**6.1 Running code**
+Ctrl + Enter. This executes the current R expression from script in the console
+ 
+**6.2 RStudio diagnostics**
+The script editor will also highlight syntax errors with a red squiggly line and a cross in the sidebar:
+
+
+
+Hover over the cross to see what the problem is:
+
+
+
+RStudio will also let you know about potential problems:
+
+**8 Workflow: projects**
+
+**8.2 Where does your analysis live?**
+
+R has a powerful notion of the working directory. This is where R looks for files that you ask it to load, and where it will put any files that you ask it to save. RStudio shows your current working directory at the top of the console:
+
+**8.4 RStudio projects**
+R experts keep all the files associated with a project together — input data, R scripts, analytical results, figures. This is such a wise and common practice that RStudio has built-in support for this via projects.
+
+
+
+
+
